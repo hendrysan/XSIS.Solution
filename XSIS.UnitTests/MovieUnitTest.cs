@@ -114,12 +114,13 @@ namespace XSIS.UnitTests
             Assert.NotNull(okResult);
             Assert.True(okResult is OkObjectResult);
 
+            await this.Delete_WhenCalled_ReturnsOkResultAsync();
             
             
         }
 
-        [Fact]
-        public async Task Delete_WhenCalled_ReturnsOkResultAsync()
+        
+        private async Task Delete_WhenCalled_ReturnsOkResultAsync()
         {
             // Arrange
             var id = 1;
