@@ -1,0 +1,150 @@
+{
+	"info": {
+		"_postman_id": "c577d0e7-bc5e-4beb-bc3e-a6aa8d2c4abe",
+		"name": "Temp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29059951",
+		"_collection_link": "https://human-resource-module.postman.co/workspace/Team-Workspace~a7db6e09-b713-415e-8022-1adfd9f7ae6c/collection/29059951-c577d0e7-bc5e-4beb-bc3e-a6aa8d2c4abe?action=share&source=collection_link&creator=29059951"
+	},
+	"item": [
+		{
+			"name": "XSIS Copy",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\" : 1,\r\n\"title\" : \"Pengabdi Setan 2 Comunion\",\r\n\"description\" : \"dalah sebuah film horor Indonesia tahun 2022 yang disutradarai dan ditulis oleh Joko Anwar sebagai sekuel dari film tahun 2017, Pengabdi Setan.\",\r\n\"rating\" : 7.0,\r\n\"image\" : \"\",\r\n\"created_at\" : \"2022-08-01T10:56:31\",\r\n\"updated_at\": \"2022-08-13T09:30:23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7218/Movies",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"id\" : 1,\r\n\"title\" : \"Pengabdi Setan 2 Comunion\",\r\n\"description\" : \"dalah sebuah film horor Indonesia tahun 2022 yang disutradarai dan ditulis oleh Joko Anwar sebagai sekuel dari film tahun 2017, Pengabdi Setan.\",\r\n\"rating\" : 7.0,\r\n\"image\" : \"\",\r\n\"created_at\" : \"2022-08-01T10:56:31\",\r\n\"updated_at\": \"2022-08-13T09:30:23\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://localhost:7218/Movies/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7218/Movies/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7218/Movies",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://localhost:7218/Movies/:id",
+							"protocol": "https",
+							"host": [
+								"localhost"
+							],
+							"port": "7218",
+							"path": [
+								"Movies",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
